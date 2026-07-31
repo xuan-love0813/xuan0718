@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<title>
+第八关｜故事里的台词
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+🎭 第八关：故事里的台词
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 翻开了一本旧剧本。
+
+<br>
+
+里面藏着许多熟悉的话。
+
+<br><br>
+
+有些台词，
+
+<br>
+
+因为喜欢的人和故事，
+
+<br>
+
+所以一直留在心里。
+
+</p>
+
+
+
+
+<p class="story">
+
+说出一句你记得的《知否》台词吧：
+
+</p>
+
+
+
+
+
+<textarea
+
+id="answer"
+
+class="answer-box"
+
+rows="4"
+
+placeholder="写下一句你喜欢的话">
+
+</textarea>
+
+
+
+
+<br><br>
+
+
+
+
+<button onclick="checkAnswer()">
+
+确认提交
+
+</button>
+
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“答案不重要，
+
+<br>
+
+重要的是，
+
+<br>
+
+你喜欢过这个故事。”
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+
+function checkAnswer(){
+
+
+
+let answer =
+
+document
+.getElementById("answer")
+.value;
+
+
+
+let result =
+
+document
+.getElementById("result");
+
+
+
+
+if(answer.trim() !== ""){
+
+
+
+result.innerHTML =
+
+
+`
+
+🌱 完成！
+
+<br><br>
+
+
+你写下的话，
+
+<br>
+
+已经成为这本小书的新一页。
+
+<br><br>
+
+
+<a href="mission09.html">
+
+进入下一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+
+`
+
+🐶 先写下一句话吧～
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

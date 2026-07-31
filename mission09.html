@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+第九关｜直播间
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+🎙️ 第九关：直播间里的那个人
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 打开了一台小电视。
+
+<br>
+
+里面有三个正在直播的频道。
+
+<br><br>
+
+但是，
+
+<br>
+
+只有一个频道，
+
+<br>
+
+属于宣宣最喜欢的主播。
+
+</p>
+
+
+
+
+<p class="story">
+
+找到正确的直播间：
+
+</p>
+
+
+
+
+
+<div class="stream-box">
+
+
+
+<button onclick="chooseStream('主播A')">
+
+📺
+
+<br>
+
+主播A
+
+</button>
+
+
+
+
+<button onclick="chooseStream('SK没关系')">
+
+🎙️
+
+<br>
+
+SK没关系
+
+</button>
+
+
+
+
+<button onclick="chooseStream('主播B')">
+
+📱
+
+<br>
+
+主播B
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“喜欢一个人，
+
+<br>
+
+一定有属于自己的理由。”
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+function chooseStream(name){
+
+
+
+let result =
+
+document.getElementById("result");
+
+
+
+if(name === "SK没关系"){
+
+
+
+result.innerHTML =
+
+
+`
+
+🌱 找到了！
+
+<br><br>
+
+
+🎙️ SK没关系
+
+<br><br>
+
+
+原来这个直播间，
+
+<br>
+
+藏着宣宣喜欢的声音。
+
+<br><br>
+
+
+<a href="mission10.html">
+
+进入下一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+
+`
+
+🐶 不是这个哦～
+
+<br>
+
+再找找那个熟悉的直播间吧。
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

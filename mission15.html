@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<title>
+第十五关｜属于我的日期
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+
+<h1 class="task-title">
+
+🎂 第十五关：属于我的日期
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 打开了一本小日历。
+
+<br>
+
+上面记录着两个特别的日子。
+
+<br><br>
+
+一个属于宣宣，
+
+<br>
+
+另一个属于陪伴宣宣的人。
+
+</p>
+
+
+
+
+<p class="story">
+
+现在，
+
+<br>
+
+找到那个属于我的生日吧：
+
+</p>
+
+
+
+
+<input
+
+id="answer"
+
+class="answer-box"
+
+placeholder="请输入四位数字">
+
+
+
+
+
+<br><br>
+
+
+
+
+<button onclick="checkAnswer()">
+
+确认日期
+
+</button>
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“因为有了你，
+
+<br>
+
+普通的一天，
+
+<br>
+
+也变成值得庆祝的日子。”
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+<script>
+
+
+
+function checkAnswer(){
+
+
+
+let answer =
+
+document
+.getElementById("answer")
+.value;
+
+
+
+let result =
+
+document
+.getElementById("result");
+
+
+
+if(answer === "0819"){
+
+
+
+result.innerHTML =
+
+
+`
+
+🌱 回答正确！
+
+<br><br>
+
+
+🎂 0819
+
+<br><br>
+
+
+这是属于我的生日。
+
+<br>
+
+也是希望以后，
+
+<br>
+
+可以一直陪着你长大的那一天。
+
+<br><br>
+
+
+<a href="mission16.html">
+
+进入下一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+
+`
+
+🐶 再想想哦～
+
+<br><br>
+
+提示：
+
+<br>
+
+八月十九日
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+}
+
+
+
+</script>
+
+
+
+
+</body>
+
+
+</html>

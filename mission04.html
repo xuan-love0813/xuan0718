@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+第四关｜最长的旅行
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+🧳 第四关：最长的旅行
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 打开了一只旧旅行箱。
+
+<br>
+
+里面有三张旅行卡片。
+
+<br><br>
+
+每一张都记录着一段特别的回忆。
+
+<br>
+
+但是，
+
+<br>
+
+有一个地方，
+
+<br>
+
+陪伴我们的时间最长。
+
+</p>
+
+
+
+
+<p class="story">
+
+找到那一次最长的旅行吧：
+
+</p>
+
+
+
+
+<div class="travel-box">
+
+
+
+<button onclick="choosePlace('成都')">
+
+🏮
+
+<br>
+
+成都
+
+</button>
+
+
+
+
+<button onclick="choosePlace('南宁')">
+
+🌿
+
+<br>
+
+南宁
+
+</button>
+
+
+
+
+<button onclick="choosePlace('厦门')">
+
+🌊
+
+<br>
+
+厦门
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“旅行的意义，
+
+不是去了哪里，
+
+而是身边的人是谁。”
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+function choosePlace(place){
+
+
+
+let result =
+
+document.getElementById("result");
+
+
+
+if(place === "南宁"){
+
+
+
+result.innerHTML =
+
+`
+
+🌱 找到了！
+
+<br><br>
+
+
+🌿 南宁
+
+<br><br>
+
+
+这里保存着我们最长的一段旅行记忆。
+
+<br>
+
+
+那些一起走过的路，
+
+<br>
+
+一起看到的风景，
+
+<br>
+
+都变成了属于我们的故事。
+
+<br><br>
+
+
+<a href="mission05.html">
+
+进入下一关 →
+
+</a>
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+`
+
+🐶 还不是这里哦～
+
+<br>
+
+想想哪一次旅行，
+
+<br>
+
+我们一起度过了最长的时间。
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

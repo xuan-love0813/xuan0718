@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+
+<title>
+第十一关｜角色图鉴
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+🧸 第十一关：角色图鉴
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 找到了一本角色图鉴。
+
+<br>
+
+里面记录着不同角色的故事。
+
+<br><br>
+
+可是，
+
+<br>
+
+有一个角色，
+
+<br>
+
+最像我认识的那个女孩。
+
+</p>
+
+
+
+
+<p class="story">
+
+找到属于宣宣的角色：
+
+</p>
+
+
+
+
+<div class="role-box">
+
+
+
+<button onclick="chooseRole('小兔子')">
+
+🐰
+
+<br>
+
+小兔子
+
+</button>
+
+
+
+
+<button onclick="chooseRole('小熊维尼')">
+
+🐻
+
+<br>
+
+小熊维尼
+
+</button>
+
+
+
+
+<button onclick="chooseRole('小猫咪')">
+
+🐱
+
+<br>
+
+小猫咪
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“有些人像某个角色，
+
+<br>
+
+不是因为外表，
+
+<br>
+
+而是因为她带来的感觉。”
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+
+function chooseRole(role){
+
+
+
+let result =
+
+document
+.getElementById("result");
+
+
+
+if(role === "小熊维尼"){
+
+
+
+result.innerHTML =
+
+
+`
+
+🌱 找到了！
+
+<br><br>
+
+
+🐻 小熊维尼
+
+<br><br>
+
+
+因为你温柔，
+
+<br>
+
+因为你善良，
+
+<br>
+
+因为你总是愿意照顾别人。
+
+<br><br>
+
+
+你就是我心里的小熊维尼。
+
+<br><br>
+
+
+<a href="mission12.html">
+
+进入下一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+
+`
+
+🐶 再想想哦～
+
+<br>
+
+这个角色，
+
+<br>
+
+和宣宣最像。
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

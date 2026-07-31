@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+第十八关｜一个喜欢你的人
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+❤️ 第十八关：一个喜欢你的人
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 找到了一张神秘纸条。
+
+<br>
+
+上面藏着一个名字。
+
+<br><br>
+
+这个名字属于一个，
+
+<br>
+
+一直默默喜欢你的人。
+
+</p>
+
+
+
+
+<p class="story">
+
+但是，
+
+<br>
+
+名字被凯撒密码隐藏了。
+
+<br>
+
+请解开它吧：
+
+</p>
+
+
+
+
+<div class="password-box">
+
+oxrzhlnh
+
+</div>
+
+
+
+
+<p class="story">
+
+🔑 解密提示：
+
+<br><br>
+
+凯撒密码
+
+<br>
+
+字母向前移动3位
+
+<br>
+
+即可找到真正的名字。
+
+</p>
+
+
+
+
+<input
+
+id="answer"
+
+class="answer-box"
+
+placeholder="请输入解密后的名字">
+
+
+
+
+
+<br><br>
+
+
+
+
+<button onclick="checkAnswer()">
+
+解开秘密
+
+</button>
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“有些喜欢，
+
+<br>
+
+不一定藏在很大的事情里。
+
+<br>
+
+它可能一直陪在你身边。”
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+function checkAnswer(){
+
+
+
+let answer =
+
+document
+.getElementById("answer")
+.value
+.toLowerCase();
+
+
+
+let result =
+
+document
+.getElementById("result");
+
+
+
+if(answer === "luoweike"){
+
+
+
+result.innerHTML =
+
+
+`
+
+🌱 解密成功！
+
+<br><br>
+
+
+❤️ luoweike
+
+<br><br>
+
+
+原来，
+
+<br>
+
+这个一直陪伴你的人，
+
+<br>
+
+也一直在故事里面。
+
+<br><br>
+
+
+<a href="mission19.html">
+
+进入下一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+
+`
+
+🐶 还没有解开哦～
+
+<br><br>
+
+提示：
+
+<br>
+
+凯撒密码，
+
+<br>
+
+字母向前移动3位。
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

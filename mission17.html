@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<title>
+第十七关｜未来地图
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+🌎 第十七关：未来地图
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 找到了一张空白地图。
+
+<br>
+
+上面没有写任何城市。
+
+<br><br>
+
+因为未来，
+
+<br>
+
+还等待着我们一起去填写。
+
+</p>
+
+
+
+
+<p class="story">
+
+写下你未来想去生活，
+
+<br>
+
+或者最想去看看的城市：
+
+</p>
+
+
+
+
+<input
+
+id="answer"
+
+class="answer-box"
+
+placeholder="请输入城市">
+
+
+
+
+
+<br><br>
+
+
+
+<button onclick="checkAnswer()">
+
+写入地图
+
+</button>
+
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“未来的路还有很远，
+
+<br>
+
+但希望地图上，
+
+<br>
+
+一直有我们。”
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+
+function checkAnswer(){
+
+
+
+let answer =
+
+document
+.getElementById("answer")
+.value;
+
+
+
+let result =
+
+document
+.getElementById("result");
+
+
+
+if(answer.trim() !== ""){
+
+
+
+result.innerHTML =
+
+
+`
+
+🌱 地图更新成功！
+
+<br><br>
+
+
+📍 ${answer}
+
+<br><br>
+
+
+这个城市，
+
+<br>
+
+成为了未来故事里的一个坐标。
+
+<br><br>
+
+
+<a href="mission18.html">
+
+进入下一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+
+`
+
+🐶 写下一个未来的目的地吧～
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+}
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<title>
+第五关｜意外的城市
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+✈️ 第五关：意外的城市
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 找到了一份旧旅行计划。
+
+<br>
+
+上面记录着几张机票。
+
+<br><br>
+
+有些目的地早已计划好，
+
+<br>
+
+但有一个城市，
+
+<br>
+
+是我们研究机票后，
+
+<br>
+
+一起决定去探索的惊喜。
+
+</p>
+
+
+
+
+<p class="story">
+
+找到那个特别的城市：
+
+</p>
+
+
+
+
+
+<div class="ticket-box">
+
+
+
+<button onclick="chooseCity('北京')">
+
+✈️
+
+<br>
+
+北京
+
+</button>
+
+
+
+<button onclick="chooseCity('泉州')">
+
+✈️
+
+<br>
+
+泉州
+
+</button>
+
+
+
+<button onclick="chooseCity('杭州')">
+
+✈️
+
+<br>
+
+杭州
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“有些旅行，
+
+不是提前规划好的，
+
+而是在某个瞬间，
+
+我们决定一起出发。”
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+function chooseCity(city){
+
+
+let result =
+
+document.getElementById("result");
+
+
+
+if(city === "泉州"){
+
+
+
+result.innerHTML =
+
+`
+
+🌱 找到了！
+
+<br><br>
+
+
+✈️ 泉州
+
+<br><br>
+
+
+这是我们一起决定去的意外城市。
+
+<br>
+
+因为一个决定，
+
+<br>
+
+我们拥有了一段新的回忆。
+
+<br><br>
+
+
+<a href="mission06.html">
+
+进入下一关 →
+
+</a>
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+`
+
+🐶 不是这个目的地哦～
+
+<br>
+
+再看看旅行计划吧。
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

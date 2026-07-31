@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+第十九关｜最后的钥匙
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+🔑 第十九关：最后的钥匙
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 找到了最后一个宝箱。
+
+<br>
+
+可是，
+
+<br>
+
+宝箱需要一串密码才能打开。
+
+<br><br>
+
+密码由我们故事里，
+
+<br>
+
+最重要的三个日期组成。
+
+</p>
+
+
+
+
+<div class="memory-box">
+
+
+🎂 0718
+
+<br><br>
+
+💚 0813
+
+<br><br>
+
+🎂 0819
+
+
+</div>
+
+
+
+
+<p class="story">
+
+按照时间顺序，
+
+<br>
+
+组合出最后的密码吧：
+
+</p>
+
+
+
+
+<input
+
+id="answer"
+
+class="answer-box"
+
+placeholder="请输入密码">
+
+
+
+
+
+<br><br>
+
+
+
+
+<button onclick="checkAnswer()">
+
+打开宝箱
+
+</button>
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“每一个数字，
+
+<br>
+
+都代表我们故事里的一部分。”
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+function checkAnswer(){
+
+
+
+let answer =
+
+document
+.getElementById("answer")
+.value;
+
+
+
+let result =
+
+document
+.getElementById("result");
+
+
+
+if(answer === "071808130819"){
+
+
+
+result.innerHTML =
+
+
+`
+
+🌱 密码正确！
+
+<br><br>
+
+
+🔓 宝箱已经打开。
+
+<br><br>
+
+
+里面藏着最后一份礼物。
+
+<br><br>
+
+
+<a href="mission20.html">
+
+进入最后一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+
+`
+
+🐶 密码错误哦～
+
+<br><br>
+
+提示：
+
+<br>
+
+按照日期出现的顺序组合。
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

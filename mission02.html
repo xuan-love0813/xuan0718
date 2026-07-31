@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+
+<title>
+第二关｜生日花园
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+🌷 第二关：生日花园
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 来到了一片小花园。
+
+<br>
+
+这里有三朵不同的花。
+
+<br><br>
+
+每一朵花都有自己的意义，
+
+<br>
+
+但只有一朵，
+
+<br>
+
+属于那个特别的女孩。
+
+</p>
+
+
+
+
+<p class="story">
+
+请选择你认为属于宣宣的花：
+
+</p>
+
+
+
+
+
+<div class="flower-box">
+
+
+
+<button onclick="chooseFlower('玫瑰')">
+
+🌹
+
+<br>
+
+玫瑰
+
+</button>
+
+
+
+
+<button onclick="chooseFlower('玉兰花')">
+
+🤍
+
+<br>
+
+玉兰花
+
+</button>
+
+
+
+
+
+<button onclick="chooseFlower('向日葵')">
+
+🌻
+
+<br>
+
+向日葵
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“有些花的美，
+
+不是热烈，
+
+而是安静地陪伴。”
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+function chooseFlower(flower){
+
+
+
+let result = 
+
+document.getElementById("result");
+
+
+
+if(flower === "玉兰花"){
+
+
+
+result.innerHTML =
+
+
+`
+
+🌱 找到了！
+
+<br><br>
+
+
+🤍 玉兰花
+
+<br><br>
+
+
+玉兰花盛开的时候，
+
+<br>
+
+总是安静又坚定。
+
+<br><br>
+
+就像我认识的宣宣一样。
+
+<br><br>
+
+
+<a href="mission03.html">
+
+进入下一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+
+`
+
+🐶 好像不是这一朵哦～
+
+<br><br>
+
+再看看花园里的其他花吧。
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

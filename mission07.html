@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+
+<title>
+第七关｜排球密码
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+🏐 第七关：排球密码
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 找到了一张排球训练记录。
+
+<br>
+
+上面记录着一个人的重要数据。
+
+<br><br>
+
+他是球场上的天才二传手，
+
+<br>
+
+也是宣宣喜欢的角色之一。
+
+</p>
+
+
+
+
+<p class="story">
+
+请输入影山飞雄的身高：
+
+</p>
+
+
+
+
+
+<input
+
+id="answer"
+
+class="answer-box"
+
+placeholder="请输入答案">
+
+
+
+
+
+<br><br>
+
+
+
+
+<button onclick="checkAnswer()">
+
+确认答案
+
+</button>
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“提示：
+
+<br>
+
+答案单位是 cm。”
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+function checkAnswer(){
+
+
+
+let answer = 
+
+document
+.getElementById("answer")
+.value;
+
+
+
+let result =
+
+document
+.getElementById("result");
+
+
+
+
+if(answer === "181"){
+
+
+
+result.innerHTML =
+
+
+`
+
+🌱 回答正确！
+
+<br><br>
+
+
+🏐 181cm
+
+<br><br>
+
+
+看来你真的很了解
+
+<br>
+
+那个站在球场上的天才少年。
+
+<br><br>
+
+
+<a href="mission08.html">
+
+进入下一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+
+`
+
+🐶 再想想哦～
+
+<br><br>
+
+提示：
+
+<br>
+
+一米八以上。
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+}
+
+
+</script>
+
+
+
+
+</body>
+
+
+</html>

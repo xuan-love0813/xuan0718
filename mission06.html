@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<title>
+第六关｜照片里的城市
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+📷 第六关：照片里的城市
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 打开了一本旧相册。
+
+<br>
+
+里面保存着很多我们的回忆。
+
+<br><br>
+
+有一张照片，
+
+<br>
+
+你特别喜欢。
+
+<br>
+
+那是我眼里，
+
+<br>
+
+你最闪闪发光的样子。
+
+</p>
+
+
+
+
+<p class="story">
+
+找到那张照片拍摄的地方吧：
+
+</p>
+
+
+
+
+
+<div class="photo-box">
+
+
+
+<button onclick="choosePhoto('海边')">
+
+🌊
+
+<br>
+
+海边
+
+</button>
+
+
+
+
+<button onclick="choosePhoto('森林')">
+
+🌲
+
+<br>
+
+森林
+
+</button>
+
+
+
+
+<button onclick="choosePhoto('西安')">
+
+🏯
+
+<br>
+
+西安
+
+</button>
+
+
+
+
+<button onclick="choosePhoto('夜景')">
+
+🌃
+
+<br>
+
+夜景
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“照片记录的不只是风景，
+
+<br>
+
+还有那个瞬间，
+
+<br>
+
+笑得很开心的你。”
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+
+function choosePhoto(place){
+
+
+
+let result =
+
+document.getElementById("result");
+
+
+
+if(place === "西安"){
+
+
+
+result.innerHTML =
+
+`
+
+🌱 找到了！
+
+<br><br>
+
+
+🏯 西安
+
+<br><br>
+
+
+原来那张让你最满意的照片，
+
+<br>
+
+是在这里留下的。
+
+<br><br>
+
+我喜欢的不只是照片，
+
+<br>
+
+还有照片里的你。
+
+<br><br>
+
+
+<a href="mission07.html">
+
+进入下一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+`
+
+🐶 好像不是这里哦～
+
+<br>
+
+再回忆一下那张特别喜欢的照片吧。
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+}
+
+
+
+</script>
+
+
+
+
+</body>
+
+
+</html>

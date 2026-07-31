@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+第一关｜宣宣的生日秘密
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+🐶 第一关：宣宣的生日秘密
+
+</h1>
+
+
+
+
+<p class="story">
+
+在遇见我之前，
+
+<br>
+
+你已经来到这个世界很多年。
+
+<br><br>
+
+有一个日期，
+
+<br>
+
+记录着一个特别女孩来到世界的那一天。
+
+</p>
+
+
+
+
+<p class="story">
+
+请输入那个属于七月的特别日期：
+
+</p>
+
+
+
+
+<input
+
+id="answer"
+
+class="answer-box"
+
+placeholder="请输入答案">
+
+
+
+<br><br>
+
+
+
+<button onclick="checkAnswer()">
+
+确认答案
+
+</button>
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+<div class="tip">
+
+🐶：
+
+“这是所有故事开始以前，
+
+最重要的一天。”
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+<script>
+
+
+function checkAnswer(){
+
+
+let answer = 
+
+document
+.getElementById("answer")
+.value;
+
+
+
+if(answer === "0718"){
+
+
+
+document
+.getElementById("result")
+.innerHTML =
+
+`
+
+🌱 回答正确！
+
+<br><br>
+
+0718
+
+<br>
+
+是宣宣来到这个世界的日子。
+
+<br><br>
+
+<a href="mission02.html">
+
+进入下一关 →
+
+</a>
+
+`;
+
+
+
+document
+.getElementById("result")
+.style.display="block";
+
+
+
+}
+
+else{
+
+
+document
+.getElementById("result")
+.innerHTML =
+
+`
+
+🐶 再想想哦～
+
+<br><br>
+
+提示：
+
+<br>
+
+七月十八日
+
+`;
+
+
+
+document
+.getElementById("result")
+.style.display="block";
+
+
+}
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

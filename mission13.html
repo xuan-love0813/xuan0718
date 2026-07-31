@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+第十三关｜猫和老鼠
+</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+
+<body>
+
+
+<div class="mission-page">
+
+<div class="task-box">
+
+
+<h1 class="task-title">
+
+🌙 第十三关：猫和老鼠的夜晚
+
+</h1>
+
+
+
+<p class="story">
+
+Pochacco 打开了一台旧电视。
+
+<br>
+
+屏幕里播放着熟悉的动画。
+
+<br><br>
+
+这里有几个角色，
+
+<br>
+
+但是只有一个，
+
+<br>
+
+是宣宣最喜欢玩的角色。
+
+</p>
+
+
+
+<p class="story">
+
+找到那个特别的小老鼠：
+
+</p>
+
+
+
+
+<div class="role-box">
+
+
+<button onclick="chooseRole('汤姆')">
+
+🐱
+
+<br>
+
+汤姆
+
+</button>
+
+
+
+<button onclick="chooseRole('梦游杰瑞')">
+
+🐭
+
+<br>
+
+梦游杰瑞
+
+</button>
+
+
+
+<button onclick="chooseRole('普通杰瑞')">
+
+🐭
+
+<br>
+
+杰瑞
+
+</button>
+
+
+</div>
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“有时候，
+
+<br>
+
+喜欢一个角色，
+
+<br>
+
+只是因为它陪伴了很多快乐时光。”
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+<script>
+
+
+function chooseRole(role){
+
+
+let result =
+
+document.getElementById("result");
+
+
+
+if(role === "梦游杰瑞"){
+
+
+
+result.innerHTML =
+
+`
+
+🌱 找到了！
+
+<br><br>
+
+🐭 梦游杰瑞
+
+<br><br>
+
+原来这个小角色，
+
+<br>
+
+陪伴了宣宣很多快乐时间。
+
+<br><br>
+
+
+<a href="mission14.html">
+
+进入下一关 →
+
+</a>
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+`
+
+🐶 好像不是这个哦～
+
+<br>
+
+再看看电视里的角色吧。
+
+`;
+
+}
+
+
+
+result.style.display="block";
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>

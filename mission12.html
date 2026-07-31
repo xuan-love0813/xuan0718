@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+第十二关｜记忆里的时期
+</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="mission-page">
+
+<div class="task-box">
+
+
+<h1 class="task-title">
+
+🎤 第十二关：记忆里的时期
+
+</h1>
+
+
+
+<p class="story">
+
+Pochacco 翻开了一本旧相册。
+
+<br>
+
+里面记录着一个人的不同模样。
+
+<br><br>
+
+有一个时期，
+
+<br>
+
+他的卷发成为了许多人记忆里的样子。
+
+</p>
+
+
+
+<p class="story">
+
+请输入那个时期的名字：
+
+</p>
+
+
+
+<input
+
+id="answer"
+
+class="answer-box"
+
+placeholder="请输入答案">
+
+
+
+<br><br>
+
+
+<button onclick="checkAnswer()">
+
+确认答案
+
+</button>
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+<div class="tip">
+
+🐶：
+
+“有些造型会过去，
+
+<br>
+
+但喜欢的人会一直记得。”
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+<script>
+
+
+function checkAnswer(){
+
+
+let answer = 
+
+document
+.getElementById("answer")
+.value
+.toLowerCase();
+
+
+
+let result =
+
+document
+.getElementById("result");
+
+
+
+if(answer === "memories"){
+
+
+result.innerHTML =
+
+`
+
+🌱 回答正确！
+
+<br><br>
+
+✨ memories时期
+
+<br><br>
+
+原来这个时期，
+
+<br>
+
+也藏着宣宣喜欢的回忆。
+
+<br><br>
+
+
+<a href="mission13.html">
+
+进入下一关 →
+
+</a>
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+`
+
+🐶 再想想哦～
+
+<br><br>
+
+提示：
+
+<br>
+
+是一个英文时期名称。
+
+`;
+
+}
+
+
+result.style.display="block";
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

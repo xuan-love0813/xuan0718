@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+
+<title>
+第十六关｜我们的味道
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+🍽️ 第十六关：我们的味道
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 找到了一本美食记录册。
+
+<br>
+
+里面收藏着许多一起吃过的东西。
+
+<br><br>
+
+有些味道，
+
+<br>
+
+不是因为食物特别，
+
+<br>
+
+而是因为身边的人特别。
+
+</p>
+
+
+
+
+<p class="story">
+
+写下一个我们都喜欢吃的东西：
+
+</p>
+
+
+
+
+<input
+
+id="answer"
+
+class="answer-box"
+
+placeholder="请输入答案">
+
+
+
+
+
+<br><br>
+
+
+
+<button onclick="checkAnswer()">
+
+记录味道
+
+</button>
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“以后还要一起吃很多很多顿饭。”
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+
+function checkAnswer(){
+
+
+let answer =
+
+document
+.getElementById("answer")
+.value;
+
+
+
+let result =
+
+document
+.getElementById("result");
+
+
+
+if(answer.trim() !== ""){
+
+
+
+result.innerHTML =
+
+
+`
+
+🌱 记录成功！
+
+<br><br>
+
+
+“${answer}”
+
+<br><br>
+
+
+这个味道，
+
+<br>
+
+已经成为我们的共同回忆。
+
+<br><br>
+
+
+<a href="mission17.html">
+
+进入下一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+
+`
+
+🐶 写下一种属于我们的味道吧～
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+}
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>

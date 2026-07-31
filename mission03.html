@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<title>
+第三关｜第一次见面
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+🌏 第三关：回到故事开始的地方
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 找到了一张旧地图。
+
+<br>
+
+地图上记录着几个城市。
+
+<br><br>
+
+可是只有一个地方，
+
+<br>
+
+藏着我们第一次见面的回忆。
+
+</p>
+
+
+
+
+<p class="story">
+
+请选择那个特别的城市：
+
+</p>
+
+
+
+
+
+<div class="city-box">
+
+
+
+<button onclick="chooseCity('上海')">
+
+🏙
+
+<br>
+
+上海
+
+</button>
+
+
+
+
+<button onclick="chooseCity('重庆')">
+
+🌆
+
+<br>
+
+重庆
+
+</button>
+
+
+
+
+<button onclick="chooseCity('青岛')">
+
+🌊
+
+<br>
+
+青岛
+
+</button>
+
+
+
+</div>
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“有些城市很美，
+
+但有些城市，
+
+因为遇见某个人，
+
+才变得特别。”
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+function chooseCity(city){
+
+
+
+let result =
+
+document.getElementById("result");
+
+
+
+if(city === "重庆"){
+
+
+
+result.innerHTML =
+
+
+`
+
+🌱 找到了！
+
+<br><br>
+
+
+🌆 重庆
+
+<br><br>
+
+
+这里记录着我们的第一次见面。
+
+<br>
+
+从这一刻开始，
+
+<br>
+
+两个不同的人，
+
+<br>
+
+慢慢走向了彼此。
+
+<br><br>
+
+
+<a href="mission04.html">
+
+进入下一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+
+`
+
+🐶 不是这里哦～
+
+<br><br>
+
+再寻找一下那座特别的城市吧。
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

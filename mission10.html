@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+
+<title>
+第十关｜只属于我们的称呼
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="mission-page">
+
+
+<div class="task-box">
+
+
+
+<h1 class="task-title">
+
+💌 第十关：只属于我们的称呼
+
+</h1>
+
+
+
+
+<p class="story">
+
+Pochacco 找到了一张小纸条。
+
+<br>
+
+上面写着：
+
+<br><br>
+
+“有些名字，
+
+<br>
+
+只有某个人叫起来，
+
+<br>
+
+才会变得特别。”
+
+</p>
+
+
+
+
+<p class="story">
+
+请输入你最喜欢我叫你的昵称：
+
+</p>
+
+
+
+
+
+<input
+
+id="answer"
+
+class="answer-box"
+
+placeholder="请输入昵称">
+
+
+
+
+
+<br><br>
+
+
+
+
+<button onclick="checkAnswer()">
+
+确认
+
+</button>
+
+
+
+
+
+<p
+
+id="result"
+
+class="success">
+
+</p>
+
+
+
+
+
+<div class="tip">
+
+🐶：
+
+“这个称呼，
+
+<br>
+
+不是别人给你的，
+
+<br>
+
+而是我们之间的小秘密。”
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+function checkAnswer(){
+
+
+
+let answer =
+
+document
+.getElementById("answer")
+.value;
+
+
+
+let result =
+
+document
+.getElementById("result");
+
+
+
+if(answer.trim() !== ""){
+
+
+
+result.innerHTML =
+
+
+`
+
+🌱 完成！
+
+<br><br>
+
+
+“${answer}”
+
+<br><br>
+
+
+这个称呼，
+
+<br>
+
+会一直保存在我们的故事里。
+
+<br><br>
+
+
+<a href="mission11.html">
+
+进入下一关 →
+
+</a>
+
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML =
+
+
+`
+
+🐶 请输入一个属于我们的称呼吧～
+
+`;
+
+
+
+}
+
+
+
+result.style.display="block";
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+
+</html>
